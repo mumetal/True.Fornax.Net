@@ -17,7 +17,8 @@ Changes Pending ......
 
 * Summary of set up : ...
 * Configuration : ...
-# Dependencies :
+# Dependencies : 
+(Dependecies might become obselete as progress continues...)
  .SharpZipLib
  .TikaOnDotnet
  .Toxy
@@ -26,6 +27,7 @@ Changes Pending ......
  .HtmlAgilityPack
  .ZeroFormatter
  .PDFBox 2.0
+ .ProtBuf.Net
 
 * Database configuration
 * How to run tests
