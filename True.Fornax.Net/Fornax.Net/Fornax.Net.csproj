@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C6193C17-EE4E-4750-B3B9-F8D954802C83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fornax.Net</RootNamespace>
+    <AssemblyName>Fornax.Net</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis\Analyzer.cs" />
+    <Compile Include="Analysis\Filters\ICacheFilter.cs" />
+    <Compile Include="Analysis\Filters\IFileFilter.cs" />
+    <Compile Include="Analysis\Filters\IFilter.cs" />
+    <Compile Include="Analysis\Filters\ILanguageFilter.cs" />
+    <Compile Include="Analysis\Filters\IOperatorFilter.cs" />
+    <Compile Include="Analysis\Filters\IRepositoryFilter.cs" />
+    <Compile Include="Analysis\Filters\IRobotFilter.cs" />
+    <Compile Include="Analysis\Filters\ISimpleFilter.cs" />
+    <Compile Include="Analysis\Filters\IStopFilter.cs" />
+    <Compile Include="Analysis\Filters\ITokenFilter.cs" />
+    <Compile Include="Analysis\IParser.cs" />
+    <Compile Include="Analysis\ISyntax.cs" />
+    <Compile Include="Analysis\RepositoryAnalyzer.cs" />
+    <Compile Include="Analysis\Search\FreeFormParser.cs" />
+    <Compile Include="Analysis\Search\NativeFormParser.cs" />
+    <Compile Include="Analysis\Search\NaturalFormParser.cs" />
+    <Compile Include="Analysis\SimpleAnalyzer.cs" />
+    <Compile Include="Analysis\StandardAnalyzer.cs" />
+    <Compile Include="Analysis\Tokenizer.cs" />
+    <Compile Include="Bot\Locale\FSCrawler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bot\Locale\FSCrawler.Designer.cs">
+      <DependentUpon>FSCrawler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bot\Net\FornaxBot.cs" />
+    <Compile Include="Bot\Net\FornaxBot.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>FornaxBot.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Bot\Net\FornaxNetBot.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bot\Net\FornaxNetBot.Designer.cs">
+      <DependentUpon>FornaxNetBot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bot\Net\NetResponse.cs" />
+    <Compile Include="Common\Culture\Language.cs" />
+    <Compile Include="Common\Repo\FornaxRepository.cs" />
+    <Compile Include="Common\Repo\FSRepository.cs" />
+    <Compile Include="Common\Repo\NETRepository.cs" />
+    <Compile Include="Common\Repo\REMRepository.cs" />
+    <Compile Include="Document\Document.cs" />
+    <Compile Include="Document\DocumentReader.cs" />
+    <Compile Include="Document\DocumentWriter.cs" />
+    <Compile Include="Document\Shard.cs" />
+    <Compile Include="Document\FornaxDocument.cs" />
+    <Compile Include="Document\Term.cs" />
+    <Compile Include="Document\TokenStream.cs" />
+    <Compile Include="FornaxConfig.cs" />
+    <Compile Include="Index\IndexWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\FornaxQuery.cs" />
+    <Compile Include="Query\IQuery.cs" />
+    <Compile Include="Util\Archive\Constant.cs" />
+    <Compile Include="Util\Archive\DictionaryTrie.cs" />
+    <Compile Include="Util\Archive\FileFormat.cs" />
+    <Compile Include="Util\Archive\FornaxCorpus.cs" />
+    <Compile Include="Util\Archive\ICorpus.cs" />
+    <Compile Include="Util\Ext\FornaxOptions.cs" />
+    <Compile Include="Util\Ext\ISerializer.cs" />
+    <Compile Include="Util\Messages\Message.cs" />
+    <Compile Include="Util\Messages\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\Ext\" />
+    <Folder Include="Search\" />
+    <Folder Include="Support\Similar\" />
+    <Folder Include="Support\Spell\" />
+    <Folder Include="Support\Suggest\" />
+    <Folder Include="Support\WordNet\" />
+    <Folder Include="Util\Archive\Log\" />
+    <Folder Include="Util\Compression\" />
+    <Folder Include="Util\Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Util\Messages\Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Bot\Net\FornaxBot.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>FornaxBot.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
