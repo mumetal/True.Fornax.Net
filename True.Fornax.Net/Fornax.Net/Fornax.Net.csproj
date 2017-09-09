@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F158B5C6-4F5D-4E89-A1CF-B6FC3F69156C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fornax.Net</RootNamespace>
+    <AssemblyName>Fornax.Net</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis\Analyzer.cs" />
+    <Compile Include="Analysis\Filters\CacheFilter.cs" />
+    <Compile Include="Analysis\Filters\Filter.cs" />
+    <Compile Include="Analysis\Filters\IFilter.cs" />
+    <Compile Include="Analysis\Filters\IOperatorFilter.cs" />
+    <Compile Include="Analysis\Filters\IRobotsFilter.cs" />
+    <Compile Include="Analysis\Filters\IStopFilter.cs" />
+    <Compile Include="Analysis\Filters\LanguageWrapperFilter.cs" />
+    <Compile Include="Analysis\Filters\RepositoryFilter.cs" />
+    <Compile Include="Analysis\Filters\TokensFilter.cs" />
+    <Compile Include="Analysis\IParser.cs" />
+    <Compile Include="Analysis\ISyntax.cs" />
+    <Compile Include="Analysis\QueryParser\BooleanParser.cs" />
+    <Compile Include="Analysis\QueryParser\Parser.cs" />
+    <Compile Include="Analysis\QueryParser\PhraseParser.cs" />
+    <Compile Include="Analysis\QueryParser\ProximityParser.cs" />
+    <Compile Include="Analysis\QueryParser\RegexParser.cs" />
+    <Compile Include="Analysis\QueryParser\TermParser.cs" />
+    <Compile Include="Analysis\QueryParser\WildcardParser.cs" />
+    <Compile Include="Analysis\RepoAnalyzer.cs" />
+    <Compile Include="Analysis\Search\FreeSearch.cs" />
+    <Compile Include="Analysis\Search\NaturalSearch.cs" />
+    <Compile Include="Analysis\Search\NativeSearch.cs" />
+    <Compile Include="Analysis\SimpleAnalyzer.cs" />
+    <Compile Include="Analysis\StandardAnalyzer.cs" />
+    <Compile Include="Analysis\Tokenizer.cs" />
+    <Compile Include="Bot\Local\Daemon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Daemon.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Bot\Local\Fornax.Daemon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bot\Local\Fornax.Daemon.Designer.cs">
+      <DependentUpon>Fornax.Daemon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bot\Local\Lib\Crawler.cs" />
+    <Compile Include="Bot\Local\Lib\Fetcher.cs" />
+    <Compile Include="Bot\Net\Altair.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Altair.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Bot\Net\Fornax.Altair.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bot\Net\Fornax.Altair.Designer.cs">
+      <DependentUpon>Fornax.Altair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bot\Net\Lib\Crawler.cs" />
+    <Compile Include="Bot\Net\Lib\Fetcher.cs" />
+    <Compile Include="Bot\Net\Lib\Rights.cs" />
+    <Compile Include="Common\Culture\Language.cs" />
+    <Compile Include="Common\Culture\Version.cs" />
+    <Compile Include="Common\Ext\DomParser.cs" />
+    <Compile Include="Common\Ext\EmailParser.cs" />
+    <Compile Include="Common\Ext\File\DomFile.cs" />
+    <Compile Include="Common\Ext\File\EmailFile.cs" />
+    <Compile Include="Common\Ext\File\ImageFile.cs" />
+    <Compile Include="Common\Ext\File\MediaFile.cs" />
+    <Compile Include="Common\Ext\File\PlainFile.cs" />
+    <Compile Include="Common\Ext\File\SheetFile.cs" />
+    <Compile Include="Common\Ext\File\SlideFile.cs" />
+    <Compile Include="Common\Ext\File\TextFile.cs" />
+    <Compile Include="Common\Ext\File\ZipFile.cs" />
+    <Compile Include="Common\Ext\ImageParser.cs" />
+    <Compile Include="Common\Ext\MediaParser.cs" />
+    <Compile Include="Common\Ext\PdfParser.cs" />
+    <Compile Include="Common\Ext\PlainParser.cs" />
+    <Compile Include="Common\Ext\SheetParser.cs" />
+    <Compile Include="Common\Ext\SlideParser.cs" />
+    <Compile Include="Common\Ext\TextParser.cs" />
+    <Compile Include="Common\Ext\Web\HtmlParser.cs" />
+    <Compile Include="Common\Ext\Web\LinkParser.cs" />
+    <Compile Include="Common\Ext\ZipParser.cs" />
+    <Compile Include="Common\Repo\FornaxRepository.cs" />
+    <Compile Include="Common\Repo\FSRepository.cs" />
+    <Compile Include="Common\Repo\NETRepository.cs" />
+    <Compile Include="Common\Repo\REMRepository.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Document\DocReader.cs" />
+    <Compile Include="Document\DocSorter.cs" />
+    <Compile Include="Document\Document.cs" />
+    <Compile Include="Document\Field\ByteField.cs" />
+    <Compile Include="Document\Field\CharField.cs" />
+    <Compile Include="Document\Field\DateField.cs" />
+    <Compile Include="Document\Field\FornaxField.cs" />
+    <Compile Include="Document\Field\IField.cs" />
+    <Compile Include="Document\Field\IntField.cs" />
+    <Compile Include="Document\Field\NumericField.cs" />
+    <Compile Include="Document\Field\StringField.cs" />
+    <Compile Include="Document\Field\TermField.cs" />
+    <Compile Include="Document\FornaxDocument.cs" />
+    <Compile Include="Document\Term.cs" />
+    <Compile Include="Document\TermStream.cs" />
+    <Compile Include="Document\Token.cs" />
+    <Compile Include="Document\TokenStream.cs" />
+    <Compile Include="Fornax.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Fornax.settings</DependentUpon>
+    </Compile>
+    <Compile Include="FornaxConfig.cs" />
+    <Compile Include="Index\DocID.cs" />
+    <Compile Include="Index\FornaxIndex.cs" />
+    <Compile Include="Index\FSIndex.cs" />
+    <Compile Include="Index\IndexReader.cs" />
+    <Compile Include="Index\IndexWriter.cs" />
+    <Compile Include="Index\RAMIndex.cs" />
+    <Compile Include="Index\Shard.cs" />
+    <Compile Include="Index\TermReader.cs" />
+    <Compile Include="Index\Vector\BitVector.cs" />
+    <Compile Include="Index\Vector\DocIDVector.cs" />
+    <Compile Include="Index\Vector\FieldVector.cs" />
+    <Compile Include="Index\Vector\TermVector.cs" />
+    <Compile Include="lib\Dll_Library.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\FornaxQuery.cs" />
+    <Compile Include="Query\Query.cs" />
+    <Compile Include="Search\Filter.cs" />
+    <Compile Include="Search\Functions\CosSimilarity.cs" />
+    <Compile Include="Search\Functions\LMSimilarity.cs" />
+    <Compile Include="Search\Functions\Scorer.cs" />
+    <Compile Include="Search\Functions\Similarity.cs" />
+    <Compile Include="Search\Model\BooleanVector.cs" />
+    <Compile Include="Search\Model\VSModel.cs" />
+    <Compile Include="Search\Rank.cs" />
+    <Compile Include="Support\FornaxStemmer.cs" />
+    <Compile Include="Support\PorterStemmer.cs" />
+    <Compile Include="Util\Archive\Constants.cs" />
+    <Compile Include="Util\Archive\Data\DictionaryTrie.cs" />
+    <Compile Include="Util\Archive\Data\UnStructuredTrie.cs" />
+    <Compile Include="Util\Archive\File\FileFormat.cs" />
+    <Compile Include="Util\Archive\File\FileFormat.Dom.cs" />
+    <Compile Include="Util\Archive\File\FileFormat.Email.cs" />
+    <Compile Include="Util\Archive\File\FileFormat.Image.cs" />
+    <Compile Include="Util\Archive\File\FileFormat.Media.cs" />
+    <Compile Include="Util\Archive\File\FileFormat.Plain.cs" />
+    <Compile Include="Util\Archive\File\FileFormat.SlideShow.cs" />
+    <Compile Include="Util\Archive\File\FileFormat.SpreadSheet.cs" />
+    <Compile Include="Util\Archive\File\FileFormat.Text.cs" />
+    <Compile Include="Util\Archive\File\FileFormat.Web.cs" />
+    <Compile Include="Util\Archive\File\FileFormat.Zip.cs" />
+    <Compile Include="Util\Archive\FornaxCorpus.cs" />
+    <Compile Include="Util\Archive\ICorpus.cs" />
+    <Compile Include="Util\Cache\DocumentCache.cs" />
+    <Compile Include="Util\Cache\IndexCache.cs" />
+    <Compile Include="Util\Cache\RepositoryCache.cs" />
+    <Compile Include="Util\Cache\SearchHistoryCache.cs" />
+    <Compile Include="Util\Cache\SuggestionCache.cs" />
+    <Compile Include="Util\Cache\TempCache.cs" />
+    <Compile Include="Util\Compression\BitEncoder.cs" />
+    <Compile Include="Util\Compression\DocumentEncoder.cs" />
+    <Compile Include="Util\Compression\LZ4Compressor.cs" />
+    <Compile Include="Util\Compression\NumericFieldEncoder.cs" />
+    <Compile Include="Util\Compression\StringEncoder.cs" />
+    <Compile Include="Util\Compression\UnicodeUtil.cs" />
+    <Compile Include="Util\Exceptions\FornaxException.cs" />
+    <Compile Include="Util\Exceptions\FornaxFormatException.cs" />
+    <Compile Include="Util\Lock.cs" />
+    <Compile Include="Util\LockFactory.cs" />
+    <Compile Include="Util\Messages\Message.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Message.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Messages\Msg.cs" />
+    <Compile Include="Util\Options.cs" />
+    <Compile Include="Util\Resources\_4naxCorpus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_4naxCorpus.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Resources\_4naxHandler.cs" />
+    <Compile Include="Util\Resources\_4naxIRBank.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_4naxIRBank.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Resources\_4naxTries.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_4naxTries.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\Costura.Fody\" />
+    <Folder Include="lib\lz4\" />
+    <Folder Include="lib\PdfBox\" />
+    <Folder Include="lib\ProtoBuf\" />
+    <Folder Include="lib\Tika\" />
+    <Folder Include="lib\Toxy\" />
+    <Folder Include="lib\ZeroFormatter\" />
+    <Folder Include="Query\Load\" />
+    <Folder Include="Support\Similarity\" />
+    <Folder Include="Support\Spell\" />
+    <Folder Include="Support\Suggest\" />
+    <Folder Include="Support\WordNet\" />
+    <Folder Include="Util\Archive\Log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Bot\Local\Daemon.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Daemon.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Bot\Net\Altair.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Altair.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Fornax.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Fornax.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\Dependencies.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Util\Messages\Message.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Message.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\Resources\_4naxCorpus.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>_4naxCorpus.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\Resources\_4naxIRBank.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>_4naxIRBank.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\Resources\_4naxTries.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>_4naxTries.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

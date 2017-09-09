@@ -1,0 +1,152 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Fornax.Net" GeneratedClassName="Fornax">
+  <Profiles />
+  <Settings>
+    <Setting Name="DefaultDOMTypes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.dhtml&lt;/string&gt;
+  &lt;string&gt;.fxml&lt;/string&gt;
+  &lt;string&gt;.htm&lt;/string&gt;
+  &lt;string&gt;.html&lt;/string&gt;
+  &lt;string&gt;.shtml&lt;/string&gt;
+  &lt;string&gt;.xaml&lt;/string&gt;
+  &lt;string&gt;.xhtml&lt;/string&gt;
+  &lt;string&gt;.xml&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DefaultEmailTypes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.eml&lt;/string&gt;
+  &lt;string&gt;.dbx&lt;/string&gt;
+  &lt;string&gt;.msg&lt;/string&gt;
+  &lt;string&gt;.pst&lt;/string&gt;
+  &lt;string&gt;.vcf&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DefaultWebTypes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.asp&lt;/string&gt;
+  &lt;string&gt;.aspx&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DefaultSlideTypes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.ppt&lt;/string&gt;
+  &lt;string&gt;.pptx&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DefaultSSheetTypes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.xl&lt;/string&gt;
+  &lt;string&gt;.xlr&lt;/string&gt;
+  &lt;string&gt;.xls&lt;/string&gt;
+  &lt;string&gt;.xlsm&lt;/string&gt;
+  &lt;string&gt;.xlsx&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DefaultMediaTypes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.mp3&lt;/string&gt;
+  &lt;string&gt;.mp4&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DefaultImageTypes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.gif&lt;/string&gt;
+  &lt;string&gt;.jpeg&lt;/string&gt;
+  &lt;string&gt;.jpg&lt;/string&gt;
+  &lt;string&gt;.png&lt;/string&gt;
+  &lt;string&gt;.tiff&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DefaultPlainTypes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.ans&lt;/string&gt;
+  &lt;string&gt;.ascii&lt;/string&gt;
+  &lt;string&gt;.c&lt;/string&gt;
+  &lt;string&gt;.cs&lt;/string&gt;
+  &lt;string&gt;.java&lt;/string&gt;
+  &lt;string&gt;.txt&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DefaultTextTypes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.csv&lt;/string&gt;
+  &lt;string&gt;.doc&lt;/string&gt;
+  &lt;string&gt;.docx&lt;/string&gt;
+  &lt;string&gt;.epub&lt;/string&gt;
+  &lt;string&gt;.pdf&lt;/string&gt;
+  &lt;string&gt;.rtf&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DefaultZipTypes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.gzip&lt;/string&gt;
+  &lt;string&gt;.rar&lt;/string&gt;
+  &lt;string&gt;.zip&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DefaultTypes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.dhtml&lt;/string&gt;
+  &lt;string&gt;.fxml&lt;/string&gt;
+  &lt;string&gt;.htm&lt;/string&gt;
+  &lt;string&gt;.html&lt;/string&gt;
+  &lt;string&gt;.shtml&lt;/string&gt;
+  &lt;string&gt;.xaml&lt;/string&gt;
+  &lt;string&gt;.xhtml&lt;/string&gt;
+  &lt;string&gt;.xml&lt;/string&gt;
+  &lt;string&gt;.eml&lt;/string&gt;
+  &lt;string&gt;.dbx&lt;/string&gt;
+  &lt;string&gt;.msg&lt;/string&gt;
+  &lt;string&gt;.pst&lt;/string&gt;
+  &lt;string&gt;.vcf&lt;/string&gt;
+  &lt;string&gt;.asp&lt;/string&gt;
+  &lt;string&gt;.aspx&lt;/string&gt;
+  &lt;string&gt;.xl&lt;/string&gt;
+  &lt;string&gt;.xlr&lt;/string&gt;
+  &lt;string&gt;.xls&lt;/string&gt;
+  &lt;string&gt;.xlsm&lt;/string&gt;
+  &lt;string&gt;.xlsx&lt;/string&gt;
+  &lt;string&gt;.ppt&lt;/string&gt;
+  &lt;string&gt;.pptx&lt;/string&gt;
+  &lt;string&gt;.mp3&lt;/string&gt;
+  &lt;string&gt;.mp4&lt;/string&gt;
+  &lt;string&gt;.gif&lt;/string&gt;
+  &lt;string&gt;.jpeg&lt;/string&gt;
+  &lt;string&gt;.jpg&lt;/string&gt;
+  &lt;string&gt;.png&lt;/string&gt;
+  &lt;string&gt;.tiff&lt;/string&gt;
+  &lt;string&gt;.ans&lt;/string&gt;
+  &lt;string&gt;.ascii&lt;/string&gt;
+  &lt;string&gt;.c&lt;/string&gt;
+  &lt;string&gt;.cs&lt;/string&gt;
+  &lt;string&gt;.java&lt;/string&gt;
+  &lt;string&gt;.txt&lt;/string&gt;
+  &lt;string&gt;.csv&lt;/string&gt;
+  &lt;string&gt;.doc&lt;/string&gt;
+  &lt;string&gt;.docx&lt;/string&gt;
+  &lt;string&gt;.epub&lt;/string&gt;
+  &lt;string&gt;.pdf&lt;/string&gt;
+  &lt;string&gt;.rtf&lt;/string&gt;
+  &lt;string&gt;.gzip&lt;/string&gt;
+  &lt;string&gt;.rar&lt;/string&gt;
+  &lt;string&gt;.zip&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="CustomTypes" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

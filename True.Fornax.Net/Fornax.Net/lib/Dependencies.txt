@@ -1,0 +1,31 @@
+﻿#This is a List of Fornax Dependecies. 
+
+#[Dll Import]
+#----Extraction------
+Html Agility Pack
+Toxy
+TikaOnDotNet
+TikaOnDotNet.TextExtractor
+SharpZipLib
+PDFBox
+iTextSharp
+taglib
+
+
+#[Dll Import]
+#-----Maintenance--------
+Costura.Fody
+IKVM
+
+#[Dll Import]
+#--------Serialization & [De|*]Compression---------
+ProtoBuf.Net
+ZeroFormmatter
+LZ4.Net
+
+## Note : These Dependencies might have dependencies of their own, 
+## its adviced to download all Packages via nuget if packages are not available.
+
+Toxy => Github: https://github.com/tonyqus/toxy
+ProtoBuf.Net => http://code.google.com/p/protobuf/
+
