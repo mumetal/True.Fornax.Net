@@ -322,22 +322,13 @@ public enum AutoCorrection {
 
 namespace Fornax.Net
 {
-    public sealed class Configuration : FornaxConfig
+    public sealed class Configuration 
     {
 
         private Configuration() { }
 
 
-        public static FornaxConfig SetConfiguration() {
-            
 
-            return null;
-        }
-
-        public static FornaxConfig LoadConfiguration() {
-           
-            return null;
-        }
 
     }
 }
